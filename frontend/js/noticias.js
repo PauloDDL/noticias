@@ -19,7 +19,7 @@ async function exibir_noticias() {
     container.innerHTML = "<p>Carregando notícias...</p>";
 
     try {
-        const resposta = await fetch("https://noticias-web-production.up.railway.app/noticias");
+        const resposta = await fetch("https://noticiaspddl.up.railway.app/noticias");
         if (!resposta.ok) throw new Error("Erro ao buscar notícias");
 
         const noticias = await resposta.json();
